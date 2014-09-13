@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Battery Level Notification by Email</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_alarm_manager">Battery Level Email Notify</string>
+	<string name="btCancel">Disable</string>
+	<string name="btStart">Enable</string>
+	<string name="btOneTime">Settings</string>
+</resources>
