@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:mm="http://millennialmedia.com/android/schema">
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startRepeatingTimer"
+        android:padding="@dimen/padding_medium"
+        android:text="Enable Service"
+        tools:context=".WidgetAlarmManagerActivity" />
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cancelRepeatingTimer"
+        android:padding="@dimen/padding_medium"
+        android:text="Disable Service"
+        tools:context=".WidgetAlarmManagerActivity" />
+
+    <Button
+        android:id="@+id/ButtonTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendTestEmail"
+        android:padding="@dimen/padding_medium"
+        android:text="Send test email"
+        tools:context=".WidgetAlarmManagerActivity" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.06"
+        android:text="After changing settings or upgrading the software, please disable/enable the service."
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btOneTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onetimeTimer"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/btOneTime"
+        tools:context=".WidgetAlarmManagerActivity" />
+
+    <com.millennialmedia.android.MMAdView
+        android:id="@+id/adView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        mm:width="320"
+        mm:height="50"
+        mm:apid="135067" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+.externalToolBuilders
+.classpath
+.git
+.idea/
+.gradle/
+build/
+gen/
+bin/
+bmp/
+jpg/
+.DS_Store

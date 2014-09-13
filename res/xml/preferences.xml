@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="first_category"
+        android:title="Battery" >
+        <EditTextPreference
+            android:defaultValue="50"
+            android:dialogMessage="When battery is below this level email will be sent"
+            android:dialogTitle="Minimal battery %"
+            android:key="battery_level"
+            android:numeric="integer"
+            android:summary="When battery is below this level email will be sent"
+            android:title="Minimal battery %" />
+             <EditTextPreference
+            android:defaultValue="10"
+            android:dialogMessage="Number of minutes between battery checks"
+            android:dialogTitle="Polling interval"
+            android:key="poll_interval"
+            android:numeric="integer"
+            android:summary="Number of minutes between battery checks"
+            android:title="Polling interval" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="email_category"
+        android:title="Email account" >
+        <EditTextPreference
+            android:dialogMessage="Username"
+            android:dialogTitle="Username"
+            android:key="username"
+            android:summary="Username"
+            android:title="Username" />
+        <EditTextPreference
+            android:inputType="textPassword"
+            android:dialogMessage="password"
+            android:dialogTitle="password"
+            android:key="password"
+            android:summary="password"
+            android:title="password" />
+        <EditTextPreference
+            android:defaultValue="smtp.gmail.com"
+            android:dialogMessage="SMTP server"
+            android:dialogTitle="SMTP server"
+            android:key="server"
+            android:summary="SMTP server"
+            android:title="SMTP server" />
+        <EditTextPreference
+            android:defaultValue="465"
+            android:dialogMessage="SMTP port"
+            android:dialogTitle="SMTP port"
+            android:key="port"
+            android:numeric="integer"
+            android:summary="SMTP port"
+            android:title="SMTP port" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="auth"
+            android:summary="Enable or disable authentication"
+            android:title="Enable authentication" />
+
+        <EditTextPreference
+            android:dialogMessage="From address"
+            android:dialogTitle="From address"
+            android:key="from"
+            android:summary="From address"
+            android:title="From address" />
+        <EditTextPreference
+            android:dialogMessage="To address"
+            android:dialogTitle="To address"
+            android:key="to"
+            android:summary="To address"
+            android:title="To address" />
+             <EditTextPreference
+            android:defaultValue="240"
+            android:dialogMessage="Number of minutes between emails"
+            android:dialogTitle="Email interval"
+            android:key="email_interval"
+            android:numeric="integer"
+            android:summary="Number of minutes between emails"
+            android:title="Email interval" />
+                   <EditTextPreference
+            android:defaultValue="Your phone needs charging (%)"
+            android:dialogMessage="Email subject line"
+            android:dialogTitle="Email subject line"
+            android:key="subject"
+            android:summary="Email subject line"
+            android:title="Email subject line" />
+                         <EditTextPreference
+            android:defaultValue="Your phone charge is %."
+            android:dialogMessage="Email body text"
+            android:dialogTitle="Email body text"
+            android:key="body"
+            android:summary="Email body text"
+            android:title="Email body text" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
